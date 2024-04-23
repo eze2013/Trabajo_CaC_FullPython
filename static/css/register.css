@@ -1,0 +1,143 @@
+* {
+    margin: 0;   /* espacio fuera del borde del elemento */
+    padding: 0;  /* espacio dentro del borde del elemento */
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../imagenes/recepcion\ hotel\ azul\ 2.jpg);
+    backdrop-filter: blur(3px);
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    background-size: cover; /* Escalar la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centrar la imagen en la pantalla */
+    background-attachment: fixed; /* Fijar la imagen de fondo */
+    
+}
+
+.formulario{
+    width: 500px; /* ancho de 400px */
+    padding: 30px; /* para separar la box del contenido */
+    background: rgba(255, 255, 255, 0.433); /* Gradiente lineal con opacidad */
+    border: 2px solid black; /* Borde negro de 4 píxeles */
+    border-radius: 6px;
+    font-size: 25px; /* tamaño de la fuente del texto del form */
+    font-family: sans-serif; /* Fuente elegante */
+    color: black; /* Color de texto */
+    margin: auto; /* para que este siempre centrado */
+    margin-top: 100px;
+
+    
+}
+
+.formulario h2{
+    /* para personalizar el texto h2 de "formulario de registro" */
+    justify-content: center;
+    font-size: 31px; /* tamaño del texto*/
+    margin-bottom: 50px; /* el espacio que deja desde abajo */
+
+}
+
+.controls{
+    /* para personalizar los cuadros de texto de "ingrese su..." */
+    width: 100%; /* ancho de las barras */
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    font-size: 15px;
+
+}
+
+.nacimiento{
+    margin-bottom: 30px;
+}
+
+#fecha_nacimiento{
+    /* cuadro de texto de nacimiento */
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 200px;
+    display: flex;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.pais{
+    margin-bottom: 30px;
+}
+
+#pais{
+    /* cuadro de texto de pais */
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 200px;
+    display: flex;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 15px;
+
+}
+.form-genero{
+    margin-top: 30px;
+}
+
+label[for="hombre"],
+label[for="mujer"],
+label[for="otro"] {
+    /* Estilos para los labels de género */
+    font-size: 15px;
+    margin: 5px;
+    padding: 10px;
+    
+}
+
+.tyc{
+    padding: 10px;
+    margin: 30px 0px 30px -10px;
+    font-size: 15px;
+}
+
+input[type="radio"] {
+    /* seleccionamos los circulos de genero */
+    transform: scale(1.2); /* tamaño de los circulos */
+}
+
+#terminos_condiciones{
+    margin-right: 10px;
+
+}
+
+/* Estilos para el botón "Enviar" */
+.enviar {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 10px 20px; /* Padding interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor al pasar el ratón */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+.enviar:hover {
+    background-color: #45a049; /* Cambia de color al pasar el ratón */
+}
+
+/* Estilos para el botón "Borrar" */
+.borrar {
+    background-color: #f44336; /* Color de fondo rojo */
+    color: white; /* Color del texto blanco */
+    padding: 10px 20px; /* Padding interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor al pasar el ratón */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+.borrar:hover {
+    background-color: #9f1d1d; /* Cambia de color al pasar el ratón */
+}
