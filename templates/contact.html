@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/barra-menu.css">
+    <link rel="stylesheet" href="../static/css/contact.css">
     <title>EasySleep</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
                     <ul>
                         <li><p>EasySleep Hotel</p></li>
                         <li><a href="index.html">INICIO</a></li>
-                        <li><a href="./templates/registrer.html">REGISTRO CLIENTE</a></li>
+                        <li><a href="./register.html">REGISTRO CLIENTE</a></li>
                         <li><a href="./templates/rooms.html">HABITACIONES</a></li>
                         <li><a href="./templates/contact.html">CONTACTO</a></li>
                     </ul>
@@ -24,9 +25,98 @@
         </div>
     </header>
     <main>
+        
         <div class="imagen">
-
+            <img src="../static/imagenes/contacto-img.jpg" alt="">
         </div>
+
+        <div class="titulo">
+            <h1>UBICACION Y CONTACTO</h1>
+        </div>
+
+        <section id="menu">
+            <form action="#" id="contacto" method="get" novalidate>
+                <div class="contacto">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                </div>
+                <div class="error" id="error-nombre"></div>
+
+                <div class="contacto">
+                    <label for="apellido">APELLIDO</label>
+                    <input type="text" name="apellido" id="apellido" required>
+                </div>
+                <div class="error" id="error-apellido"></div>
+
+                <div class="contacto">
+                    <label for="email">E-MAIL</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="error" id="error-email"></div>
+
+                <div class="contacto">
+                    <label for="repetir-email">REPETIR E-MAIL</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="error" id="error-email"></div>
+
+                <div class="contacto">
+                    <label for="telefono">TELEFONO</label>
+                    <input type="number" name="telefono" id="telefono" required>
+                </div>
+                <div class="error" id="error-telefono"></div>
+
+                <div class="contacto">
+                    <label for="pais">PAIS</label>
+                    <input type="text" name="pais" id="pais" required>
+                </div>
+                <div class="error" id="error-pais"></div>
+
+                <div class="contacto">
+                    <label for="provincia">PROVINCIA</label>
+                    <input type="text" name="provincia" id="provincia" required>
+                </div>
+                <div class="error" id="error-provincia"></div>
+
+                <div class="contacto">
+                    <label for="date">FECHA DE INGRESO</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div class="error" id="error-date"></div>
+
+                <div class="contacto">
+                    <label for="date">FECHA DE EGRESO</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div class="error" id="error-date"></div>
+
+                <div class="contacto">
+                    <select name="habitaciones" id="habitaciones" class="form-select">
+                        <option value="">HABITACIONES</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                </div>
+                
+                <div class="comentario">
+                    <input type="text" placeholder="Comentario - Consulta">
+                </div>
+
+                <div class="enviar_comentario">
+                    <button type="submit">ENVIAR CONSULTA</button>
+                    <div class="form-help">
+                        <a href="#">Necesitas ayuda?</a>
+                    </div>
+                </div>  
+            
+            </form>
+        </section>
+
+        <div class="mapa">
+            <h3>UBICACION - MAPA</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d27240.846607325137!2d-64.21088501447538!3d-31.411210276277693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHotel%20Sheraton%20cerca%20de%20C%C3%B3rdoba%2C%20Provincia%20de%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1713746581193!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>    
     </main>
     <footer></footer>
 </body>

@@ -1,0 +1,34 @@
+.imagen{
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    box-shadow: inset 0 0 0 2000px (rgba(84,84,84,0.5));
+}
+
+.titulo{
+    color: black;
+    font-size: 35px;
+    font-style: italic;
+    width: auto;
+    height: auto;
+    margin-top: -580px;
+    text-align: center;
+}
+
+.contacto{
+    font-size: 25px;
+    width: 100%;
+}
+
+.enviar_comentario{
+    font-size: 30px;
+}
+
+.comentario{
+    width: 350px;
+    padding: 15px;
+}
+
+.mapa{
+    font-size: 30px;
+}
