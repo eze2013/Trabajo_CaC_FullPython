@@ -26,89 +26,68 @@
         </div>
     </header>
     <main>
-        
-        <div class="imagen">
-            <img src="../static/imagenes/contacto-img.jpg" alt="">
-        </div>
 
         <div class="titulo">
             <h1>UBICACION Y CONTACTO</h1>
         </div>
 
-        <section id="menu">
-            <form action="#" id="contacto" method="get" novalidate>
-                <div class="contacto">
-                    <label for="nombre">NOMBRE</label>
-                    <input type="text" name="nombre" id="nombre" required>
-                </div>
-                <div class="error" id="error-nombre"></div>
+        <section class="menu">
+            <form action="ezequielclara1@gmail.com" method="post" enctype="text/plain">
 
-                <div class="contacto">
-                    <label for="apellido">APELLIDO</label>
-                    <input type="text" name="apellido" id="apellido" required>
-                </div>
-                <div class="error" id="error-apellido"></div>
+                <h3>CONTACTO:</h3>
+                
+                <label for="nombre">Nombre:</label>
+                <input class="contacto" type="text" id="nombre" name="nombre" required><br>
 
-                <div class="contacto">
-                    <label for="email">E-MAIL</label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-                <div class="error" id="error-email"></div>
+                <label for="apellido">Apellido:</label>
+                <input class="contacto" type="text" id="apellido" name="apellido" required><br>
 
-                <div class="contacto">
-                    <label for="repetir-email">REPETIR E-MAIL</label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-                <div class="error" id="error-email"></div>
+                <label for="email">Email:</label>
+                <input class="contacto" type="email" id="email" name="email" required><br>
 
-                <div class="contacto">
-                    <label for="telefono">TELEFONO</label>
-                    <input type="number" name="telefono" id="telefono" required>
-                </div>
-                <div class="error" id="error-telefono"></div>
+                <label for="telefono">Telefono:</label>
+                <input class="contacto" type="number" id="telefono" name="telefono" required><br>
 
-                <div class="contacto">
-                    <label for="pais">PAIS</label>
-                    <input type="text" name="pais" id="pais" required>
-                </div>
-                <div class="error" id="error-pais"></div>
+                <label for="pais">Pais:</label>
+                <input class="contacto" type="text" id="pais" name="pais" required><br>
 
-                <div class="contacto">
-                    <label for="provincia">PROVINCIA</label>
-                    <input type="text" name="provincia" id="provincia" required>
-                </div>
-                <div class="error" id="error-provincia"></div>
+                <label for="provincia">Provincia:</label>
+                <input class="contacto" type="text" id="provincia" name="provincia" required><br>
 
-                <div class="contacto">
-                    <label for="date">FECHA DE INGRESO</label>
-                    <input type="date" name="date" id="date" required>
-                </div>
-                <div class="error" id="error-date"></div>
-
-                <div class="contacto">
-                    <label for="date">FECHA DE EGRESO</label>
-                    <input type="date" name="date" id="date" required>
-                </div>
-                <div class="error" id="error-date"></div>
-
-                <div class="contacto">
-                    <select name="habitaciones" id="habitaciones" class="form-select">
-                        <option value="">HABITACIONES</option>
+                    <select class="menu-despegable" name="adultos">
+                        <label for="adultos">Adultos:</label>
+                        <option value="" disabled selected>Adultos</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
-                </div>
+                    </select>
+                    
+                    <select class="menu-despegable" name="niños">
+                        <label for="niños">Niños:</label>
+                        <option value="" disabled selected>Niños</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+
+                    <select class="menu-despegable" name="habitaciones">
+                        <label for="habitaciones">Habitaciones:</label>
+                        <option value="" disabled selected>Habitaciones</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
                 
-                <div class="comentario">
-                    <input type="text" placeholder="Comentario - Consulta">
+                <div>
+                    <input class="comentario" type="text" placeholder="Comentario - Consulta">
                 </div>
 
-                <div class="enviar_comentario">
-                    <button type="submit">ENVIAR CONSULTA</button>
-                    <div class="form-help">
-                        <a href="#">Necesitas ayuda?</a>
-                    </div>
+                <div>
+                    <input class="envio" type="submit" value="enviar">
+                    <input class="borro" type="reset" value="borrar">
                 </div>  
             
             </form>
