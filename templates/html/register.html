@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- conexion al css de register -->
+    <link rel="stylesheet" href="/Static/css/register.css">
+    
+    <title>EasySleep</title>
+</head>
+<body>
+    <header>
+        <!--BARRA DE MENU-->
+        <div class="Contenedor-menu">
+            <div class="Barra-Menu">
+                <nav>
+                    <ul>
+                        <li><p>EasySleep Hotel</p></li>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="/Templates/html/register.html">REGISTRO CLIENTE</a></li>
+						<li><a href="/Templates/html/reserva.html">RESERVA</a></li>
+                        <li><a href="/Templates/html/rooms.html">HABITACIONES</a></li>
+						<li><a href="/Templates/html/events.html">EVENTOS</a></li>
+                        <li><a href="/Templates/html/contact.html">CONTACTO</a></li>
+                    </ul>
+                </nav>    
+            </div>
+        </div>
+    </header>
+
+    <!-- cuerpo -->
+    <main>
+
+        <!-- caja del formulario -->
+        <div class="formulario">
+            <!-- formulario -->
+            <form action="mailto:santino2004c@gmail.com" method="post" enctype="text/plain">
+
+                <h2>FORMULARIO DE REGISTRO</h2>
+
+                <label for="nombre">Nombre:</label>
+                <input class="controls" type="text" id="nombre" name="nombre" required placeholder=" Ingrese su nombre...">
+
+                <label for="apellido">Apellido:</label>
+                <input class="controls" type="text" id="apellido" name="apellido" required placeholder=" Ingrese su apellido...">
+
+                <label for="dni">DNI:</label>
+                <!-- ponemos la condicion para que solo se puedan ingresar digitos (7 min, 8 max)-->
+                <input class="controls" type="text" id="dni" name="dni" required pattern="[0-9]{7,8}" placeholder=" Ingrese su dni...">
+
+                <label for="telefono">Teléfono:</label>
+                <!-- ponemos la condicion para que solo se puedan ingresar digitos -->
+                <input class="controls" type="tel" id="telefono" name="telefono" required pattern="[0-9]+" placeholder=" Ingrese su telefono...">
+
+                <div class="nacimiento">
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                </div>
+
+                <div class="pais">
+                    <!-- select de paises -->
+                    <label for="pais">Pais:</label>
+                    <select id="pais" name="pais" required>
+                    <option value="" disabled selected>Seleccione su pais</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option value="Mexico">Mexico</option>
+                </div>
+
+                </select>
+
+                <div class="form-genero">
+                    <!-- radiobutton de generos -->
+                    <label>Género:</label>
+                    <div class="genero">
+                        <input type="radio" id="hombre" name="genero" value="hombre" required>
+                        <label for="hombre">Hombre</label>
+                        <input type="radio" id="mujer" name="genero" value="mujer">
+                        <label for="mujer">Mujer</label>
+                        <input type="radio" id="otro" name="genero" value="otro">
+                        <label for="otro">Otro</label>
+                    </div>
+                </div>
+                
+                <div class="tyc">
+                    <!-- checkbox de terminos y condiciones -->
+                    <input type="checkbox" id="terminos_condiciones" name="terminos_condiciones" required>
+                    <label for="terminos_condiciones">Acepto los términos y condiciones</label>
+                </div>
+
+                
+                <div>
+                    <!-- Botones de enviar y borrar -->
+                    <input class="enviar" type="submit" value="Enviar">
+                    <input class="borrar" type="reset" value="Borrar">
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer></footer>
+</body>
+</html>

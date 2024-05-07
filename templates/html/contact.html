@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Static/css/contact.css">
+    <title>EasySleep</title>
+</head>
+<body>
+    <header>
+        <!--BARRA DE MENU-->
+        <div class="Contenedor-menu">
+            <div class="Barra-Menu">
+                <nav>
+                    <!--menu-->
+                    <ul>
+                        <li><p>EasySleep Hotel</p></li>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="/Templates/html/register.html">REGISTRO CLIENTE</a></li>
+						<li><a href="/Templates/html/reserva.html">RESERVA</a></li>
+                        <li><a href="/Templates/html/rooms.html">HABITACIONES</a></li>
+						<li><a href="/Templates/html/events.html">EVENTOS</a></li>
+                        <li><a href="/Templates/html/contact.html">CONTACTO</a></li>
+                    </ul>
+                </nav>    
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="titulo">
+            <h1>UBICACION Y CONTACTO</h1>
+        </div>
+
+        <section class="menu">
+            <form action="ezequielclara1@gmail.com" method="post" enctype="text/plain">
+
+                <h3>CONTACTO:</h3>
+                
+                <label for="nombre">Nombre:</label>
+                <input class="contacto" type="text" id="nombre" name="nombre" required><br>
+
+                <label for="apellido">Apellido:</label>
+                <input class="contacto" type="text" id="apellido" name="apellido" required><br>
+
+                <label for="email">Email:</label>
+                <input class="contacto" type="email" id="email" name="email" required><br>
+
+                <label for="telefono">Telefono:</label>
+                <input class="contacto" type="number" id="telefono" name="telefono" required><br>
+
+                <label for="pais">Pais:</label>
+                <input class="contacto" type="text" id="pais" name="pais" required><br>
+
+                <label for="provincia">Provincia:</label>
+                <input class="contacto" type="text" id="provincia" name="provincia" required><br>
+
+                    <select class="menu-despegable" name="adultos">
+                        <label for="adultos">Adultos:</label>
+                        <option value="" disabled selected>Adultos</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    
+                    <select class="menu-despegable" name="niños">
+                        <label for="niños">Niños:</label>
+                        <option value="" disabled selected>Niños</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+
+                    <select class="menu-despegable" name="habitaciones">
+                        <label for="habitaciones">Habitaciones:</label>
+                        <option value="" disabled selected>Habitaciones</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                
+                <div>
+                    <input class="comentario" type="text" placeholder="Comentario - Consulta">
+                </div>
+
+                <div>
+                    <input class="envio" type="submit" value="enviar">
+                    <input class="borro" type="reset" value="borrar">
+                </div>  
+            
+            </form>
+        </section>
+
+        <div class="mapa">
+            <h3>UBICACION - MAPA</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d27240.846607325137!2d-64.21088501447538!3d-31.411210276277693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHotel%20Sheraton%20cerca%20de%20C%C3%B3rdoba%2C%20Provincia%20de%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1713746581193!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>    
+    </main>
+    <footer></footer>
+</body>
+</html>

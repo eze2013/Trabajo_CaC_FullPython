@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Static/css/eventos.css">
+    <title>Eventos</title>
+</head>
+<body>
+    <header>
+         <!--BARRA DE MENU-->
+         <div class="Contenedor-menu">
+            <div class="Barra-Menu">
+                <nav>
+                    <ul>
+                        <li><p>EasySleep Hotel</p></li>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="/Templates/html/register.html">REGISTRO CLIENTE</a></li>
+						<li><a href="/Templates/html/reserva.html">RESERVA</a></li>
+                        <li><a href="/Templates/html/rooms.html">HABITACIONES</a></li>
+						<li><a href="/Templates/html/events.html">EVENTOS</a></li>
+                        <li><a href="/Templates/html/contact.html">CONTACTO</a></li>
+                    </ul>
+                </nav>    
+            </div>
+        </div>  
+    </header>
+
+    <section>
+    <div class="contenedor-event"> <br> <br><br>
+        <h2>EVENTOS</h2><br><br>
+        <!--Imagen del evento social  -->
+            <div class="content-imagen-event">
+                <img src="/Static/img/eventos-sociales.jpg" alt="Eventos sociales" id="img1">
+                <!-- <img src="../img/cena.jpg" alt="cena" id="img2"> -->
+            </div>  
+            <div class="content-texto-event"><br><br>
+                <h2>Eventos Sociales</h2><br>
+                <p>Nuestro hotel ofrece diferentes alternativas para casamientos, cumpleaños y bautismos. Con servicios de organizador de eventos y la posibilidad de realizar ceremonias religiosas o civil en nuestros jardines. Espacioso y elegante, es el lugar perfecto para celebrar momentos especiales para compartir con familia y amigos.</p>
+                <br><br><br><br>
+            </div>
+    
+            <div class="content-imagen2-event">
+        <!-- imagen evento corporativo -->
+                <img src="/Static/img/eventos-corporativos.jpg" alt="Eventos corporativos" id="img2">
+            </div>
+            <div class="content-texto-event"><br><br>
+                <h2>Eventos Corporativos</h2><br>
+                <p>Contamos con salon para organizar reuniones de 40 a 80 personas estrategicamente ubicados. Especial para charlas, conferencias o bien jornadas de trabajo. El hotel dispone de proyector, microfono y audio.
+                    Cada evento se diseña a medida de acuerdo a las necesidades y preferencias de cada cliente.
+                </p><br><br><br>
+                <div class="boton-evento">
+                    <a href="#modal-consulta" class="btn">Envienos su consulta</a>
+                </div>
+            </div>
+    </div>       
+    </section>
+    <section>
+        <div id="modal-consulta" class="ventanamodal"> 
+            <div class="modal-contenido"> 
+                <span class="close">x</span>
+                <h2>Consulta</h2>
+                <form method="post" class="formulario">
+                    <!-- <form action="" method="post"> falta aregar la ruta -->
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                    <label for="consulta">Su consulta</label>
+                    <textarea name="consulta" id="consulta" cols="30" rows="5" placeholder="Escriba aqui su consulta..."></textarea>
+                    <input type="submit" value="Enviar consulta">
+                </form>
+            </div> 
+        </div>
+        <script src="/Templates/javaScript/events.js"></script>   
+    </section> 
+</body>
+</html>
