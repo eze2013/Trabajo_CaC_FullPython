@@ -1,0 +1,508 @@
+
+*{/* Estilos globales para todos los elementos */
+    margin: 0; /*Establece el margen y el relleno (padding) a 0, eliminando los espacios predeterminados.*/
+    padding: 0;
+    font-family: sans-serif; /*Define la fuente como sans-serif.*/
+    box-sizing: border-box;  /*Configura el modelo de caja como border-box, lo que significa que el relleno y el borde se incluyen en el ancho y alto total del elemento.*/
+    text-decoration: none;
+}
+
+.Contenedor-menu{
+    width: 100%;
+    height: 70px;
+    background: darkblue;
+    padding: 0px 20px;
+}
+
+.Barra-menu{
+    max-width: 1000px;
+    margin: auto;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav > ul{
+    height: 100%;
+    display: flex;
+}
+
+nav > ul >li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav > ul > li > p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: blue;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+}
+
+
+body{/* Estilos específicos para el elemento <body> */
+    background-color: rgb(248, 237, 199); /*Establece el color de fondo como un valor RGB (248, 237, 199), que es un tono amarillo claro.*/
+}
+
+.line{/*Selecciona elementos con la clase "line" */
+    background:rgb(0, 0, 54);                 /*Establece el color de fondo como un valor RGB*/
+    padding: 40px;                              /*Agrega un relleno de 40 píxeles al elemento.*/
+}
+
+#rooms{/*Selecciona elemento con el ID "rooms" */
+
+    color: white;                             /*Establece el color del texto como blanco.*/
+    text-align: center;                         /*Centra el texto horizontalmente utilizando text-align.*/
+    font-size: 28px;                            /*Define el tamaño de fuente como 18px.*/   
+
+}
+
+#description{/*Selecciona elemento con el ID "description" */
+
+    margin: 18px;                               /*Agrega un margen de 10 píxeles alrededor del elemento.*/
+    color: black;                               /*Establece el color del texto como negro.*/
+    text-align: center;                         /*Centra el texto horizontalmente utilizando text-align.*/
+
+}
+
+#services{/*Selecciona elemento con el ID "services" */
+
+    color: white;                                /*Establece el color del texto como blanco.*/
+    text-align: center;                          /*Centra el texto horizontalmente utilizando text-align.*/
+    font-size: 28px;                             /*Define el tamaño de fuente como 18px.*/
+
+}
+
+/*CARRUSEL*/
+
+
+
+.slider-box{/* Contenedor principal para el deslizador */
+
+    width: 1580px;                      		/* Ancho del contenedor */
+    height: auto; 								/* Altura automática según el contenido */
+    margin: 0; 									/* Sin margen exterior */
+    overflow: hidden; 							/* Oculta el contenido que se desborde */
+	
+}
+
+
+.slider-box ul{/* Lista no ordenada dentro del contenedor del deslizador */
+
+    display: flex; 								/* Los elementos de la lista se muestran en fila */
+    padding: 0; 								/* Sin relleno interior */
+    width: 400%; 								/* Ancho total de la lista, para permitir la animación */
+    animation: slide_01 20s infinite alternate ease-in-out; /* Animación definida */
+	
+}
+
+
+.slider-box li{/* Elementos individuales de la lista */
+
+    width: 100%; 								/* Cada elemento ocupa el 100% del ancho del contenedor */
+    list-style: none; 							/* Sin estilo de lista, es decir, sin viñetas */
+    position: relative; 						/* Posición relativa para posicionar elementos internos */
+	
+}
+
+
+.text{/* Estilo para el texto dentro del deslizador */
+
+    position: absolute; 						/* Posición absoluta respecto a su contenedor relativo */
+    text-align:center; 							/* Texto centrado horizontalmente */
+    padding: 0 250px; 							/* Relleno horizontal para centrar el contenido */
+    top: 250px; 								/* Posición desde la parte superior del contenedor */
+    color: white; 								/* Color del texto */
+	
+}
+
+
+.text h2{/* Estilo para los encabezados dentro del texto */
+
+    font-size: 45px; 							/* Tamaño de la fuente del encabezado */
+    margin-bottom: 35px; 						/* Margen inferior del encabezado */
+	
+}
+
+
+.btn_1{/* Estilo para un botón específico */
+
+    padding: 20px; 								/* Relleno interior del botón */
+    background: rgb(0, 0, 83); 					/* Color de fondo del botón */
+    color: white; 								/* Color del texto del botón */
+    border-radius: 50px; 						/* Bordes redondeados del botón */
+    transition: transform 0.3s ease; 			/* Transición suave para transformaciones */
+	
+}
+
+
+.contenedor-opacidad {/* Estilo para el contenedor que tendrá opacidad */
+
+    position: relative; 						/* Posición relativa para elementos internos absolutos */
+    display: inline-block; 						/* Se muestra en línea pero permite dimensiones de bloque */
+	
+}
+
+
+.imagen-opaca {/* Estilo para la imagen que será opaca */
+
+    display: block; 							/* La imagen se muestra como un bloque */
+	
+}
+
+
+.capa-opacidad {/* Estilo para la capa que da opacidad a la imagen */
+
+    position: absolute; 						/* Posición absoluta sobre la imagen */
+    top: 0; 									/* Alineado al borde superior del contenedor */
+    left: 0; 									/* Alineado al borde izquierdo del contenedor */
+    width: 100%; 								/* Ancho completo del contenedor */
+    height: 100%; 								/* Altura completa del contenedor */
+    background-color: rgba(0, 0, 0, 0.5); 		/* Color de fondo negro con opacidad */
+	
+}
+
+@keyframes slide_01{/* Definición de la animación 'slide_01' */
+    0%, 20% { 
+        margin-left: 0; /* Inicio de la animación, el margen izquierdo es 0 */
+    }
+
+    25%, 45% { 
+        margin-left: -100%; /* Desplaza el contenedor al 100% a la izquierda */
+    }
+
+    50%, 70% { 
+        margin-left: -200%; /* Desplaza el contenedor al 200% a la izquierda */
+    }
+
+    75%, 100% { 
+        margin-left: -300%; /* Desplaza el contenedor al 300% a la izquierda */
+    }
+}
+
+/*HABITACIONES*/
+
+.card-container{/* Contenedor para las tarjetas */
+
+    display: flex;                            /* Muestra los elementos en fila */
+    justify-content: center;                  /* Centra horizontalmente los elementos */
+    flex-wrap: wrap;                          /* Permite que los elementos se envuelvan en varias líneas */
+    margin-top: 50px;                         /* Margen superior de 50 píxeles */
+	
+}
+
+.card{/* Estilo para cada tarjeta */
+
+    width: 350px;                            /* Ancho de la tarjeta */
+    background-color: white;                 /* Fondo blanco */
+    border-radius: 8px;                      /* Bordes redondeados */
+    overflow: hidden;                        /* Oculta el contenido que se desborda */
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2); /* Sombra ligera */
+    margin: 20px;                            /* Margen exterior de 20 píxeles */
+	
+}
+
+.card img{/* Estilo para las imágenes dentro de las tarjetas */
+
+    width: 100%;                            /* La imagen ocupa todo el ancho de la tarjeta */
+    height: auto;                           /* Altura automática según la proporción original */
+	
+}
+
+.card-content{/* Estilo para el contenido de la tarjeta */
+
+    padding: 16px;                          /* Relleno interior de 16 píxeles */
+	
+}
+
+.card-content h3{/* Estilo para los encabezados dentro del contenido */
+
+    font-size: 28px;                        /* Tamaño de fuente para los encabezados */
+    margin-bottom: 8px;                     /* Margen inferior de 8 píxeles */
+	
+}
+
+.card-content p{/* Estilo para los párrafos dentro del contenido */
+
+    color: #666;                            /* Color de texto gris oscuro */
+    font-size: 15px;                        /* Tamaño de fuente para los párrafos */
+    line-height: 1.3;                       /* Espaciado entre líneas */
+	
+}
+
+.card-content .btn_2{/* Estilo para los botones dentro del contenido */
+
+    display: inline-block;                  /* Se muestra como un elemento en línea */
+    padding: 8px 16px;                      /* Relleno interior del botón */
+    background-color: #333;                 /* Fondo del botón en color gris oscuro */
+    text-decoration: none;                  /* Sin subrayado en el texto del botón */
+    border-radius: 4px;                     /* Bordes redondeados del botón */
+    margin-top: 16px;                       /* Margen superior de 16 píxeles */
+    color: #fff;                            /* Color de texto blanco */
+}
+
+/*SERVICIOS*/
+
+.description-service p{/* Selecciona los elementos <p> dentro de un elemento con la clase "description-service".*/ 
+
+    margin: 10px;                                /*Agrega un margen de 10 píxeles alrededor del párrafo.*/
+    color: black;                              /*Establece el color del texto como negro.*/
+    font-size: 16px;                             /*Define el tamaño de fuente como 15px.*/
+    text-align: center;                          /*Centra el texto horizontalmente.*/
+
+}
+.container-service{/*Selecciona elementos con la clase "container-service".*/
+
+    display: flex;                               /*Muestra los elementos como un contenedor flexible (flex).*/
+    justify-content: center;                     /*Centra el contenido horizontalmente utilizando justify-content.*/
+    margin-top: 50px;                            /*Agrega un margen superior de 50px.*/
+
+}
+.card-service{/*Selecciona elementos con la clase "card-service".*/
+
+    display: flex;                               /*Muestra los elementos como un contenedor flexible (flex).*/
+    background-color: white;                   /*Establece el color de fondo en blanco.*/
+    border-radius: 8px;                          /*Agrega esquinas redondeadas con un radio de borde de 8px.*/
+    width: 600px;                                /* Establece el ancho en 700px.*/
+    overflow: hidden;                            /* Oculta cualquier contenido que se desborde*/
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);   /*Agrega una sombra de caja para un efecto sutil*/
+    margin: 10px;                                /*Agrega un margen de 10px.*/
+    flex-direction:row;                          /*Organiza el contenido en una fila (flex-direction: row).*/
+
+}
+.card-service img{/*Selecciona elementos <img> dentro de un elemento con la clase "card-service".*/
+    width: 50%;                                  /*Establece el ancho de la imagen al 50% del ancho del contenedor.*/
+    height: auto;                                /*Mantiene la proporción de aspecto (altura automática).*/
+}
+.card-content-servic{/*Selecciona elementos con la clase "card-content-service".*/
+    padding: 50px;                               /*Agrega un relleno de 50px.*/
+}
+.card-content-service h3{/*Selecciona elementos <h3> dentro de un elemento con la clase "card-content-service".*/
+    font-size: 20px;/*Establece el tamaño de fuente en 20px y centra el texto horizontalmente.*/
+    text-align: center;
+    margin: 5px;
+    margin-top: 5px;
+}
+.card-content-service h4{/*Establece el tamaño de fuente en 15px y centra el texto horizontalmente.*/
+    font-size: 15px;
+    text-align: center;
+    margin: 5px;
+    margin-top: 5px;
+}
+.card-content-service p{
+    /*Establece el tamaño de fuente en 15px y justifica el texto.*/
+    font-size: 15px;
+    text-align: justify;
+    margin: 5px;
+    margin-top: 10px;
+}
+.boton01{                                        /*Selecciona elementos con la clase "boton01".*/
+    display: flex;                               /*Muestra los elementos como un contenedor flexible (flex).*/
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-end;                        /*Centra verticalmente el contenido utilizando align-self.*/
+    margin-right: 0;                          /*Agrega márgenes para posicionar.*/
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.boton01 .btn_3{/*Selecciona elementos con la clase "btn_2" dentro de un elemento con la clase "boton01".*/
+    background-color: black;/*stablece el color de fondo en negro, el color del texto en blanco y agrega relleno y bordes redondeados.*/
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+/*Contacto*/
+footer{
+    background: rgb(0, 0, 54);
+    padding-top: 50px;
+}
+.container-footer{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    width: 33.3%;
+}
+.footer-content h3{
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-content p{
+    color: #fff;
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+}
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: rgb(248, 237, 199);
+    transition-duration:.5s ;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i{
+    color: #fff;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+.social-icons i:hover{
+    color: white;
+}
+.bottom-bar{
+    background-color: rgb(248, 237, 199);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: black;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}  
+/* Estilos para la ventana modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1; /* Sitúa la modal por encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Anchura completa */
+    height: 100%; /* Altura completa */
+    overflow: auto; /* Habilita el scroll si es necesario */
+    background-color: rgb(0,0,0); /* Color de fondo */
+    background-color: rgba(0,0,0,0.4); /* Negro con opacidad */
+  }
+  
+  /* Estilo del contenedor de la modal */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% desde arriba y centrado */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Podrías ajustar esto según tus necesidades */
+  }
+  
+  /* El botón cerrar (x) */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el formulario */
+  form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Asegura que padding y width sean consistentes */
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: rgb(0, 0, 54);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilos para etiquetas y leyendas */
+  label,
+  legend {
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+  }

@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'sans-serif';   /* Tipo de letra*/
+    box-sizing: border-box;     /*el ancho y el alto se calculan teniendo en cuenta el contenido, el border y el padding*/
+    text-decoration: none;      /* Sin tipo de decoracion*/
+}
+     
+.Contenedor-menu{
+    width: 100%;
+    height: 70px;
+    background: rgb(0, 0, 54);
+    padding: 0px 20px;
+}
+
+.Barra-menu{
+    max-width: 1000px;
+    margin: auto;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav > ul{
+    height: 100%;
+    display: flex;
+}
+
+nav > ul >li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav > ul > li > p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: blue;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+}
+
+    /* ESTILO DE EVENTOS*/
+
+.contenedor-event{
+    background-color: rgb(252, 249, 194);  /* color de fondo*/
+    border-radius: 5px;
+    
+}
+.contenedor-event h2{
+    display: flex;
+    justify-content: center;       /* Centrado horizontalmente*/
+    align-items: center;           /* Centrado verticalmente*/
+    margin: 10px;                  /* Margen*/
+} 
+.content-imagen-event{
+    display: flex;
+    justify-content: center;
+}
+#img1{
+    width: 65%;
+    height: auto;
+}
+
+.content-texto-event h2{
+    display: flex;
+    justify-content:center;
+    font-size: 28px;         /* Tamaño de la fuente*/
+}
+.content-texto-event p{
+    font-size: 19px;        /*Tamaño de la fuente*/
+    text-align: center;     /* Se posiciona en el centro el texto*/
+}
+.content-imagen2-event{
+    display: flex;
+    justify-content: center;
+}
+#img2{
+    width: 65%;              /*Ancho de la imagen*/
+    height: auto;            /* Alto de la imagen*/
+}
+.content-texto-event h2{
+    text-align: center;      /* Se posiciona en el centro el texto*/
+}
+.boton-evento{
+    background-color: rgb(0, 0, 54);      /* Color de fondo*/
+    border-radius: 5px;
+    margin-bottom: 20px;                     /* Margen de la parte inferior*/
+    padding: 10px;                           /* Relleno*/
+    text-align: center;                       /* Se posiciona en el centro el texto*/
+    width: 40%;                               /* Ancho*/
+    margin-left: 30%;                         /*Margen desde la parte izquierda*/
+}
+.btn{
+    color: #ffff;
+    font-size: 19px;  /* Tamaño de la fuente*/
+    text-decoration: none;   /*Decoracion del texto*/
+}
+.ventanamodal{             /*Estilo de la ventana modal*/
+   display: none;  /* Oculto la ventana modal por defecto*/
+   position: fixed; 
+   z-index: 1;  /* Coloca la ventana modal por encima de todo*/
+   left: 0;
+   top: 0;
+   width: 100%;  /*Ancho */
+   height: 100%; /*Alto*/
+   overflow: auto;  /* Habilita el scroll si fuera necesario*/
+   background-color: rgb(0, 0, 0);  /* Color de fondo*/
+   background-color: rgba(0, 0, 0, 0.4);  /* Negro con opacidad*/
+}
+.modal-contenido{                   /* Estilo del contenedor modal*/
+    background-color: #fefefe;
+    border: 1px solid #888; 
+    margin: 10px auto;  /*Se coloca a 10% desde arriba y centrado*/
+    padding: 20px;  /*relleno*/
+    width: 88%;
+}  
+.close{        /* Boton modal*/
+    color: #aaa;
+    float: right;
+    font-size: 28px;      /*Tamaño de la fuente*/
+    font-weight: bold;    /*grosor de la fuente */
+} 
+.close:hover,
+.close:focus{
+    color: black;
+    text-decoration: none;    /* Sin decoracion de texto*/
+    cursor: pointer;          /*Permite seleccionar un puntero*/
+}
+.modal-contenido h2{
+    text-align: center;
+}
+form{
+    background-color: #ffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+input[type="text"], 
+input[type="email"],
+input[type="tel"],
+
+textarea{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;      /*Ancho y alto se calculan teniendo en cuenta el contenido, el border y el padding*/
+    display: inline-block;       /* Se comporta como in line pero no ignora el width y el height*/
+    margin: 8px 0;
+    padding: 12px;
+    width: 100%;
+}
+input[type="submit"]{
+    background-color: rgb(0, 0, 54);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;        /* El cursor es el puntero*/
+    margin: 8px 0;
+    padding: 14px 20px;
+    width: 100%;
+}
+input[type="submit"]:hover{
+    background-color: #45a049;
+}

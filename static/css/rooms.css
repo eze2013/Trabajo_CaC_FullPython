@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.Contenedor-menu{
+    width: 100%;
+    height: 70px;
+    background: rgb(0, 0, 54);
+    padding: 0px 20px;
+}
+
+.Barra-menu{
+    max-width: 1000px;
+    margin: auto;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav > ul{
+    height: 100%;
+    display: flex;
+}
+
+nav > ul >li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav > ul > li > p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: blue;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+}
+
+/* ESTILO DE LAS HABITACIONES*/
+.contenedor-rooms{
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+   
+}
+.contenedor-tarjeta-rooms{
+    background-color:rgb(202, 199, 148);
+    border-radius: 5px;
+    width: 1000px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.contenedor-tarjeta-rooms img{
+   width: 55%;
+   height: auto; 
+}
+.contenedor-texto-rooms{
+    padding: 50px;
+    background-color:rgb(252, 249, 194);
+}
+.contenedor-texto-rooms h2{
+    font-size: 25px;
+    text-align: center;
+}
+.contenedor-texto-rooms p{
+    font-size: 16px;
+    text-align: left;
+}
+.contenedor-texto-rooms ul li{
+    font-size: medium;
+    list-style: none;
+}
+.contenedor-texto-rooms ul li i{
+    color: black;
+}
+.boton-rooms{
+    background-color: rgb(0,0, 54);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.btn-rooms{
+    color: white;
+    text-decoration: none;
+}
