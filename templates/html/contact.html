@@ -27,15 +27,15 @@
         </div>
     </header>
     <main>
-
-        <div class="titulo">
+         <!--Titulo de la pagina-->
+         <div class="titulo">
             <h1>UBICACION Y CONTACTO</h1>
         </div>
 
         <section class="menu">
             <form action="ezequielclara1@gmail.com" method="post" enctype="text/plain">
 
-                <h3>CONTACTO:</h3>
+                <h3><i>CONTACTO:</i></h3>
                 
                 <label for="nombre">Nombre:</label>
                 <input class="contacto" type="text" id="nombre" name="nombre" required><br>
@@ -55,6 +55,12 @@
                 <label for="provincia">Provincia:</label>
                 <input class="contacto" type="text" id="provincia" name="provincia" required><br>
 
+                <label for="fecha-ingreso">Fecha Ingreso:</label>
+                <input class="contacto" type="date" name="Fecha Ingreso"><br>
+
+                <label for="fecha-egreso">Fecha Egreso:</label>
+                <input class="contacto" type="date" name="Fecha Egreso">
+
                     <select class="menu-despegable" name="adultos">
                         <label for="adultos">Adultos:</label>
                         <option value="" disabled selected>Adultos</option>
@@ -73,17 +79,24 @@
                         <option value="4">4</option>
                     </select>
 
-                    <select class="menu-despegable" name="habitaciones">
-                        <label for="habitaciones">Habitaciones:</label>
-                        <option value="" disabled selected>Habitaciones</option>
+                    <select class="menu-despegable" name="habitacion">
+                        <label for="habitacion">Habitacion:</label>
+                        <option value="" disabled selected>Habitacion</option>
+                        <option value="Single Doble">Single Doble</option>
+                        <option value="Doble twin">Doble twin</option>
+                        <option value="Triple twin">Triple twin</option>
+                    </select>
+                
+                    <select name="noches" class="menu-despegable">
+                        <label for="noches">Noches:</label>
+                        <option value="" disabled selected>Noches</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                     </select>
-                
                 <div>
-                    <input class="comentario" type="text" placeholder="Comentario - Consulta">
+                    <textarea name="comentario" id="comentario" cols="40" rows="8" placeholder="comentario-consulta"></textarea>
                 </div>
 
                 <div>
@@ -95,10 +108,63 @@
         </section>
 
         <div class="mapa">
-            <h3>UBICACION - MAPA</h3>
+            <h3><i>UBICACION - MAPA</i></h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d27240.846607325137!2d-64.21088501447538!3d-31.411210276277693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHotel%20Sheraton%20cerca%20de%20C%C3%B3rdoba%2C%20Provincia%20de%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1713746581193!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>    
+        </div> 
+        
+        <div class="cercanias">
+            <h4 id="titulo-cercanias"><i>DISTANCIAS:</i></h4>
+            <p><b>Nuevo centro Shopping.........Conectado por Parking</p>
+            <p>Hospital de Clinicas ..........................................0,9 km</p>
+            <p>Observatorio astronomico................................0,9 km</p>
+            <p>Paseo Sobremonte................................................1 km</p>
+            <p>Feria Artesanal Paseo de las Artes..................1,4 km</p>
+            <p>La Cañada ........................................................1,5 km</p>
+            <p>Patio Olmos Shopping Mall.............................1,5 km</p>
+            <p>Teatro del Libertador.......................................1,5 km</p>
+            <p>Universidad Nacional de Cordoba..................1,6 km</p>
+            <p>Manzana Jesuitica............................................1,6 km</p>
+            <p>Catedral de Cordoba........................................1,8 km</p>
+            <p>El Paseo Buen Pastor........................................1,9 km</p>
+            <p>Plaza España.....................................................2,4 km</p>
+            <p>Aeropuerto Ambrosio L V Taravella................11 km</b></p>
+        </div>
+        
+        
+     
     </main>
-    <footer></footer>
+    <footer>
+        <script src="https://kit.fontawesome.com/96ca335d68.js" crossorigin="anonymous"></script>
+       <div class="container-footer">
+            <div class="footer-content">
+                <h3>Contactanos</h3>
+                <p>Email: EasySleephotel&resort@gmail.com.ars</p>
+                <p>Telf: 2233838474</p>
+                <p>Direccion: yyyyyyy 234 </p>
+            </div>
+            <div class="footer-content">
+                <h3>EasySleep</h3>
+                <ul class="list">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="./templates/registrer.html">REGISTRO CLIENTE</a></li>
+						<li><a href="./templates/reserva.html">RESERVA</a></li>
+                        <li><a href="./templates/rooms.html">HABITACIONES</a></li>
+						<li><a href="./templates/events.hmtl">EVENTOS</a></li>
+                        <li><a href="./templates/contact.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Siguenos en</h3>
+                <ul class="social-icons">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+       </div>
+       <div class="bottom-bar">
+            <p>&copy; 2024 EasySleep Hotel&Resort. All rights reserved</p>
+       </div>
+    </footer>
 </body>
 </html>

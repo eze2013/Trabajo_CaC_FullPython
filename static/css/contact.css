@@ -2,9 +2,145 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(/static/img/contacto-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(2px);
+}
+
+.menu{
+    width: 400px;
+    padding: 30px;
+    background: rgba(180, 180, 180, 0.433);
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 30px;
     font-family: sans-serif;
+    color: darkblue;
+    margin-left: 800px;
+}
+
+.menu h3{
+    justify-content: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.contacto{
+    padding: 2px;
+    border: 1px solid darkblue;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.menu-despegable{
+    border: 1px solid darkblue;
+    border-radius: 2px;
+    width: 150px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    color: darkblue;
+}
+
+#comentario{
+    margin-top: 35px;
+    font-family: sans-serif;
+    font-size: 15px;
+    border: 2px solid darkblue;
+    
+}
+
+.envio{
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.envio:hover{
+    background-color: green;
+}
+
+.borro{
+    background-color: darkred;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.borro:hover{
+    background-color: red;
+}
+
+.titulo{
+    background: rgba(180, 180, 180, 0.433);
+    font-family: sans-serif;
+    font-size: 30px;
+    color: darkblue;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.mapa h3{
+    color: darkblue;
+    font-family: sans-serif;
+    font-size: 35px;
+    background: rgba(180,180,180, 0.433);
+    width: 400px;
+    padding: 10px;
+    margin-top: -800px;
+    margin-left: 80px;
+}
+
+.cercanias{
+    background: rgba(180, 180, 180, 0.433);
+    font-family: sans-serif;
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+    width: 630px;
+    border: 1px solid darkblue;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+#titulo-cercanias{
+    font-family: sans-serif;
+    color: darkblue;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
 }
+
 .Contenedor-menu{
     width: 100%;
     height: 70px;
@@ -62,111 +198,94 @@ nav > ul > li > a:hover{
 
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    background: url(/Static/img/contacto-img.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+footer{
+    background: rgb(0, 0, 54);
+    padding-top: 50px;
 }
 
-.menu{
-    width: 400px;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.433);
-    border: 1px solid black;
-    border-radius: 7px;
-    font-size: 30px;
-    font-family: sans-serif;
-    color: darkblue;
-    margin-left: 800px;
-}
-
-.menu h3{
+.container-footer{
+    width: 1140px;
+    margin: auto;
+    display: flex;
     justify-content: center;
-    font-size: 35px;
-    margin-bottom: 50px;
 }
 
-.contacto{
-    /*width: 100%;*/
-    padding: 2px;
-    border: 1px solid darkblue;
-    border-radius: 3px;
-    margin-bottom: 12px;
-    font-size: 15px;
+.footer-content{
+    width: 33.3%;
 }
 
-.menu-despegable{
-    border: 1px solid darkblue;
-    border-radius: 2px;
-    width: 150px;
-    margin-top: 5px;
-    font-size: 15px;
-    font-family: sans-serif;
+.footer-content h3{
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 15px;
     text-align: center;
-    color: darkblue;
 }
 
-.comentario{
-    width: 300px;
-    padding: 40px;
-    margin-top: 35px;
-    font-family: sans-serif;
-    font-size: 15px;
-    border: 2px solid darkblue;
+.footer-content p{
+    color: #fff;
+    width: 190px;
+    margin: auto;
+    padding: 7px;
 }
-
-.envio{
-    background-color: darkgreen;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 15px;
-    margin-top: 20px;
-}
-
-.envio:hover{
-    background-color: green;
-}
-
-.borro{
-    background-color: darkred;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 15px;
-    margin-top: 20px;
-}
-
-.borro:hover{
-    background-color: red;
-}
-
-.titulo{
-    background: rgba(255, 255, 255, 0.433);
-    font-family: sans-serif;
-    font-size: 30px;
-    color: darkblue;
+.footer-content ul{
     text-align: center;
-    margin-bottom: 50px;
 }
 
-.mapa h3{
-    color: darkblue;
-    font-family: sans-serif;
-    font-size: 35px;
-    background: rgba(255, 255, 255, 0.433);
-    width: 400px;
-    padding: 10px;
-    margin-top: -690px;
-    margin-left: 80px;
+.list{
+    padding: 0;
 }
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: rgb(248, 237, 199);
+    transition-duration:.5s ;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i{
+    color: #fff;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+.social-icons i:hover{
+    color: white;
+}
+.bottom-bar{
+    background-color: rgb(248, 237, 199);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: black;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}  
