@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- conexion al css de register -->
     <link rel="stylesheet" href="/Static/css/register.css">
     
@@ -34,33 +35,31 @@
         <!-- caja del formulario -->
         <div class="formulario">
             <!-- formulario -->
-            <form action="mailto:santino2004c@gmail.com" method="post" enctype="text/plain">
+            <form action="mailto:santino2004c@gmail.com" id="form-registro" method="post" enctype="text/plain">
 
                 <h2>FORMULARIO DE REGISTRO</h2>
 
                 <label for="nombre">Nombre:</label>
-                <input class="controls" type="text" id="nombre" name="nombre" required placeholder=" Ingrese su nombre...">
+                <input class="controls" type="text" id="nombre" name="nombre"  placeholder=" Ingrese su nombre...">
 
                 <label for="apellido">Apellido:</label>
-                <input class="controls" type="text" id="apellido" name="apellido" required placeholder=" Ingrese su apellido...">
+                <input class="controls" type="text" id="apellido" name="apellido"  placeholder=" Ingrese su apellido...">
 
                 <label for="dni">DNI:</label>
-                <!-- ponemos la condicion para que solo se puedan ingresar digitos (7 min, 8 max)-->
-                <input class="controls" type="text" id="dni" name="dni" required pattern="[0-9]{7,8}" placeholder=" Ingrese su dni...">
+                <input class="controls" type="text" id="dni" name="dni" placeholder=" Ingrese su dni...">
 
                 <label for="telefono">Teléfono:</label>
-                <!-- ponemos la condicion para que solo se puedan ingresar digitos -->
-                <input class="controls" type="tel" id="telefono" name="telefono" required pattern="[0-9]+" placeholder=" Ingrese su telefono...">
+                <input class="controls" type="tel" id="telefono" name="telefono" placeholder=" Ingrese su telefono...">
 
                 <div class="nacimiento">
                     <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" >
                 </div>
 
                 <div class="pais">
                     <!-- select de paises -->
                     <label for="pais">Pais:</label>
-                    <select id="pais" name="pais" required>
+                    <select id="pais" name="pais" >
                     <option value="" disabled selected>Seleccione su pais</option>
                     <option value="Argentina">Argentina</option>
                     <option value="Uruguay">Uruguay</option>
@@ -77,7 +76,7 @@
                     <!-- radiobutton de generos -->
                     <label>Género:</label>
                     <div class="genero">
-                        <input type="radio" id="hombre" name="genero" value="hombre" required>
+                        <input type="radio" id="hombre" name="genero" value="hombre" >
                         <label for="hombre">Hombre</label>
                         <input type="radio" id="mujer" name="genero" value="mujer">
                         <label for="mujer">Mujer</label>
@@ -88,7 +87,7 @@
                 
                 <div class="tyc">
                     <!-- checkbox de terminos y condiciones -->
-                    <input type="checkbox" id="terminos_condiciones" name="terminos_condiciones" required>
+                    <input type="checkbox" id="terminos_condiciones" name="terminos_condiciones" >
                     <label for="terminos_condiciones">Acepto los términos y condiciones</label>
                 </div>
 
@@ -105,6 +104,41 @@
 
     </main>
 
-    <footer></footer>
+    <footer>
+        <script src="https://kit.fontawesome.com/96ca335d68.js" crossorigin="anonymous"></script>
+        <div class="container-footer">
+            <div class="footer-content">
+                <h3>Contactanos</h3>
+                <p>Email: EasySleephotel&resort@gmail.com.ars</p>
+                <p>Telf: 2233838474</p>
+                <p>Direccion: yyyyyyy 234 </p>
+            </div>
+            <div class="footer-content">
+                <h3>EasySleep</h3>
+                <ul class="list">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="./templates/registrer.html">REGISTRO CLIENTE</a></li>
+						<li><a href="./templates/reserva.html">RESERVA</a></li>
+                        <li><a href="./templates/rooms.html">HABITACIONES</a></li>
+						<li><a href="./templates/events.hmtl">EVENTOS</a></li>
+                        <li><a href="./templates/contact.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Siguenos en</h3>
+                <ul class="social-icons">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 EasySleep Hotel&Resort. All rights reserved</p>
+        </div>
+    </footer>
+
+        <!-- conectamos el html con el script de js-->
+        <script src="/templates/javaScript/register.js"></script>
 </body>
 </html>
