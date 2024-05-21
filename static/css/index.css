@@ -506,3 +506,11 @@ a:hover{
     display: block;
     font-weight: bold;
   }
+  #error{
+    width: 200px;
+    text-align: center;
+    color: rgb(0, 0, 54);
+    font-weight: bold;
+    margin: auto;
+    padding: 15px;
+  }

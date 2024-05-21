@@ -23,3 +23,42 @@ window.onclick = function(event) {
     modal.style.display = 'none';
   }
 }
+
+//Validacion de la Consulta
+
+const formConsult = document.getElementById("MiFormulario")
+const inputNombre = document.getElementById("nombre")
+const inputEmail = document.getElementById("email")
+const inputServicio = document.getElementById("servicio")
+const inputTextarea = document.getElementById("mensaje")
+const parrafo = document.getElementById("error")
+
+formConsult.addEventListener("submit", e=>{
+  e.preventDefault();
+  let warning = "";
+  let valor = false;
+  parrafo.innerHTML = "";
+  let regexEmail =/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+
+  if (inputNombre.value.lemght<3){
+    warning+=`El nombre es invalido <br>`
+    valor=true;
+  }
+
+  if (!regexEmail.test(inputEmail.value)){
+    warning+=`El email es invalido vuelva a intentarlo <br>`
+    valor=true;
+  }
+  if (inputTextarea.value.length<10){
+    warning+=`La consulta es invalida intente de nuevo <br>`
+    valor=true;
+  }
+  if (valor){
+    parrafo.innerHTML = warning;
+  }else{
+    parrafo.innerHTML="CONSULTA ENVIADA EXITOSAMENTE";
+    formConsult.reset();
+  }
+
+})

@@ -184,10 +184,10 @@
                     <h2>Consulta de Servicios del Hotel</h2>
                     <form id="MiFormulario" method="post">
                         <label for="nombre">Tu Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                        <input type="text" id="nombre" name="nombre">
                 
                         <label for="email">Tu Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email">
                 
                         <label for="servicio">Selecciona el servicio sobre el que deseas información:</label>
                         <select id="servicio" name="servicio">
@@ -201,6 +201,7 @@
                         <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí cualquier pregunta específica que tengas..."></textarea>
                 
                         <input type="submit" value="Enviar Consulta">
+                        <p id="error" class="error"></p>
                     </form>
                 </div>       
             </div>
@@ -219,12 +220,14 @@
             <div class="footer-content">
                 <h3>EasySleep</h3>
                 <ul class="list">
-                        <li><a href="index.html">INICIO</a></li>
-                        <li><a href="./templates/registrer.html">REGISTRO CLIENTE</a></li>
-						<li><a href="./templates/reserva.html">RESERVA</a></li>
-                        <li><a href="./templates/rooms.html">HABITACIONES</a></li>
-						<li><a href="./templates/events.hmtl">EVENTOS</a></li>
-                        <li><a href="./templates/contact.html">CONTACTO</a></li>
+                       <li><p>EasySleep Hotel</p></li>
+                       <li><a href="index.html">INICIO</a></li>
+                       <li><a href="/templates/html/register.html">REGISTRO CLIENTE</a></li>
+                       <li><a href="/templates/html/reserva.html">RESERVA</a></li>
+                       <li><a href="/templates/html/rooms.html">HABITACIONES</a></li>
+                       <li><a href="/templates/html/events.html">EVENTOS</a></li>
+                       <li><a href="/templates/html/contact.html">CONTACTO</a></li>
+
                 </ul>
             </div>
             <div class="footer-content">
