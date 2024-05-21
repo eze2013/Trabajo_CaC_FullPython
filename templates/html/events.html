@@ -60,8 +60,7 @@
             <div class="modal-contenido"> 
                 <span class="close">x</span>
                 <h2>Consulta</h2>
-                <form method="post" class="formulario">
-                    <!-- <form action="" method="post"> falta aregar la ruta -->
+                <form id="formulario" method="post">
                     <label for="nombre">Nombre y Apellido</label>
                     <input type="text" id="nombre" name="nombre" required>
                     <label for="email">Correo electronico</label>
@@ -71,6 +70,7 @@
                     <label for="consulta">Su consulta</label>
                     <textarea name="consulta" id="consulta" cols="30" rows="5" placeholder="Escriba aqui su consulta..."></textarea>
                     <input type="submit" value="Enviar consulta">
+                    <p id="error" class="error"></p>
                 </form>
             </div> 
         </div>
