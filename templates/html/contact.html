@@ -33,35 +33,36 @@
         </div>
 
         <section class="menu">
-            <form action="ezequielclara1@gmail.com" method="post" enctype="text/plain">
+            <!--comenzamos con el formulario-->
+            <form action=" " method="get" name="formulario" id="formulario" >
 
                 <h3><i>CONTACTO:</i></h3>
                 
                 <label for="nombre">Nombre:</label>
-                <input class="contacto" type="text" id="nombre" name="nombre" required><br>
+                <input class="contacto" type="text" name="nombre" id="nombre"><br>
 
                 <label for="apellido">Apellido:</label>
-                <input class="contacto" type="text" id="apellido" name="apellido" required><br>
+                <input class="contacto" type="text" name="apellido" id="apellido"><br>
 
                 <label for="email">Email:</label>
-                <input class="contacto" type="email" id="email" name="email" required><br>
+                <input class="contacto" type="email" name="email" id="email"><br>
 
                 <label for="telefono">Telefono:</label>
-                <input class="contacto" type="number" id="telefono" name="telefono" required><br>
+                <input class="contacto" type="number" name="telefono" id="telefono"><br>
 
                 <label for="pais">Pais:</label>
-                <input class="contacto" type="text" id="pais" name="pais" required><br>
+                <input class="contacto" type="text"  name="pais" id="pais"><br>
 
                 <label for="provincia">Provincia:</label>
-                <input class="contacto" type="text" id="provincia" name="provincia" required><br>
+                <input class="contacto" type="text"  name="provincia" id="provincia"><br>
 
                 <label for="fecha-ingreso">Fecha Ingreso:</label>
-                <input class="contacto" type="date" name="Fecha Ingreso"><br>
+                <input class="contacto" type="date" name="fecha-ingreso" id="fechaIngreso"><br>
 
                 <label for="fecha-egreso">Fecha Egreso:</label>
-                <input class="contacto" type="date" name="Fecha Egreso">
+                <input class="contacto" type="date" name="fecha-egreso" id="fechaEgreso">
 
-                    <select class="menu-despegable" name="adultos">
+                    <select class="menu-despegable" name="adultos" id="adultos">
                         <label for="adultos">Adultos:</label>
                         <option value="" disabled selected>Adultos</option>
                         <option value="1">1</option>
@@ -70,7 +71,7 @@
                         <option value="4">4</option>
                     </select>
                     
-                    <select class="menu-despegable" name="niños">
+                    <select class="menu-despegable" name="niños" id="niños">
                         <label for="niños">Niños:</label>
                         <option value="" disabled selected>Niños</option>
                         <option value="1">1</option>
@@ -79,7 +80,7 @@
                         <option value="4">4</option>
                     </select>
 
-                    <select class="menu-despegable" name="habitacion">
+                    <select class="menu-despegable" name="habitacion" id="habitacion">
                         <label for="habitacion">Habitacion:</label>
                         <option value="" disabled selected>Habitacion</option>
                         <option value="Single Doble">Single Doble</option>
@@ -87,7 +88,7 @@
                         <option value="Triple twin">Triple twin</option>
                     </select>
                 
-                    <select name="noches" class="menu-despegable">
+                    <select name="noches" class="menu-despegable" id="noches">
                         <label for="noches">Noches:</label>
                         <option value="" disabled selected>Noches</option>
                         <option value="1">1</option>
@@ -100,7 +101,7 @@
                 </div>
 
                 <div>
-                    <input class="envio" type="submit" value="enviar">
+                    <input class="envio" type="submit" value="enviar" name="envio"> 
                     <input class="borro" type="reset" value="borrar">
                 </div>  
             
@@ -129,9 +130,7 @@
             <p>Plaza España.....................................................2,4 km</p>
             <p>Aeropuerto Ambrosio L V Taravella................11 km</b></p>
         </div>
-        
-        
-     
+         <a href="eze20_rhcp@hotmail.com" id="mail" name="mail"></a>
     </main>
     <footer>
         <script src="https://kit.fontawesome.com/96ca335d68.js" crossorigin="anonymous"></script>
@@ -140,17 +139,17 @@
                 <h3>Contactanos</h3>
                 <p>Email: EasySleephotel&resort@gmail.com.ars</p>
                 <p>Telf: 2233838474</p>
-                <p>Direccion: yyyyyyy 234 </p>
+                <p>Direccion: Luis Costas 235 </p>
             </div>
             <div class="footer-content">
                 <h3>EasySleep</h3>
                 <ul class="list">
-                        <li><a href="index.html">INICIO</a></li>
-                        <li><a href="./templates/registrer.html">REGISTRO CLIENTE</a></li>
-						<li><a href="./templates/reserva.html">RESERVA</a></li>
-                        <li><a href="./templates/rooms.html">HABITACIONES</a></li>
-						<li><a href="./templates/events.hmtl">EVENTOS</a></li>
-                        <li><a href="./templates/contact.html">CONTACTO</a></li>
+                        <li><a href="/templates/html/index.html">INICIO</a></li>
+                        <li><a href="/templates/html/register.html">REGISTRO CLIENTE</a></li>
+						<li><a href="/templates/html/reserva.html">RESERVA</a></li>
+                        <li><a href="/templates/html/rooms.html">HABITACIONES</a></li>
+						<li><a href="/templates/html/events.html">EVENTOS</a></li>
+                        <li><a href="/templates/html/contact.html">CONTACTO</a></li>
                 </ul>
             </div>
             <div class="footer-content">
@@ -166,5 +165,9 @@
             <p>&copy; 2024 EasySleep Hotel&Resort. All rights reserved</p>
        </div>
     </footer>
+
+       <!--conectando con java-->
+       <script src="/templates/javaScript/contact2.js"></script>
+
 </body>
 </html>

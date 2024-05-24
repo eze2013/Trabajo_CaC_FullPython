@@ -60,8 +60,7 @@
             <div class="modal-contenido"> 
                 <span class="close">x</span>
                 <h2>Consulta</h2>
-                <form method="post" class="formulario">
-                    <!-- <form action="" method="post"> falta aregar la ruta -->
+                <form id="formulario" method="post">
                     <label for="nombre">Nombre y Apellido</label>
                     <input type="text" id="nombre" name="nombre" required>
                     <label for="email">Correo electronico</label>
@@ -71,6 +70,7 @@
                     <label for="consulta">Su consulta</label>
                     <textarea name="consulta" id="consulta" cols="30" rows="5" placeholder="Escriba aqui su consulta..."></textarea>
                     <input type="submit" value="Enviar consulta">
+                    <p id="error" class="error"></p>
                 </form>
             </div> 
         </div>
@@ -89,12 +89,12 @@
          <div class="footer-content">
              <h3>EasySleep</h3>
              <ul class="list">
-                     <li><a href="index.html">INICIO</a></li>
-                     <li><a href="./templates/registrer.html">REGISTRO CLIENTE</a></li>
-                     <li><a href="./templates/reserva.html">RESERVA</a></li>
-                     <li><a href="./templates/rooms.html">HABITACIONES</a></li>
-                     <li><a href="./templates/events.hmtl">EVENTOS</a></li>
-                     <li><a href="./templates/contact.html">CONTACTO</a></li>
+                     <li><a href="/templates/html/index.html">INICIO</a></li>
+                     <li><a href="/templates/html/register.html">REGISTRO CLIENTE</a></li>
+                     <li><a href="/templates/html/reserva.html">RESERVA</a></li>
+                     <li><a href="/templates/html/rooms.html">HABITACIONES</a></li>
+                     <li><a href="/templates/html/events.html">EVENTOS</a></li>
+                     <li><a href="/templates/html/contact.html">CONTACTO</a></li>
              </ul>
          </div>
          <div class="footer-content">
