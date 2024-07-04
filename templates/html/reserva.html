@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>EasySleep</title>
-    <link rel="stylesheet" href="/Static/css/reserva.css">
+    <link rel="stylesheet" href="/static/css/reserva.css">
 
 </head>
 <body>
@@ -18,11 +18,11 @@
                     <ul>
                         <li><p>EasySleep Hotel</p></li>
                         <li><a href="/index.html">INICIO</a></li>
-                        <li><a href="/Templates/html/register.html">REGISTRO CLIENTE</a></li>
-						<li><a href="/Templates/html/reserva.html">RESERVA</a></li>
-                        <li><a href="/Templates/html/rooms.html">HABITACIONES</a></li>
-						<li><a href="/Templates/html/events.html">EVENTOS</a></li>
-                        <li><a href="/Templates/html/contact.html">CONTACTO</a></li>
+                        <li><a href="/templates/html/register.html">REGISTRO CLIENTE</a></li>
+						<li><a href="/templates/html/reserva.html">RESERVA</a></li>
+                        <li><a href="/templates/html/rooms.html">HABITACIONES</a></li>
+						<li><a href="/templates/html/events.html">EVENTOS</a></li>
+                        <li><a href="/templates/html/contact.html">CONTACTO</a></li>
                     </ul>
                 </nav>    
             </div>
@@ -31,73 +31,91 @@
 
     <main>
         <!-- caja del formulario de reserva -->
-        <div class="formulario-reserva">
-            <!-- formulario -->
-            <form action="mailto:santino2004c@gmail.com"  id="form-reserva" method="post" enctype="text/plain">
-                <h2>FORMULARIO DE RESERVA</h2>
-
-                <label for="nombre">Nombre:</label>
-                <input class="controls" type="text" id="nombre" name="nombre"  placeholder=" Ingrese su nombre...">
-
-                <label for="apellido">Apellido:</label>
-                <input class="controls" type="text" id="apellido" name="apellido"  placeholder=" Ingrese su apellido...">
-
-                <label for="mail">Mail:</label>
-                <input class="controls" type="text" id="mail" name="mail"  placeholder=" Ingrese su mail...">
-
-                <label for="telefono">Teléfono:</label>
-                <input class="controls" type="tel" id="telefono" name="telefono" placeholder=" Ingrese su telefono...">
-
-                <label for="adultos">Adultos:</label>
-                <input class="controls" type="number" id="adultos" name="adultos" placeholder=" Cantidad de adultos..." min="1">
-
-                <label for="menores">Menores:</label>
-                <input class="controls" type="number" id="menores" name="menores" placeholder=" Cantidad de menores..." min="0">
-
-                    <!-- fechas de llegada y salida -->
-                    <div class="fecha_llegada">
-                        <label class="fecha_llegada" for="fecha_llegada">Fecha de llegada:</label>
-                        <input type="date" id="fecha_llegada" name="fecha_llegada" >
+        <section id="form" class="container">
+            <h2 class="search-title">FORMULARIO DE RESERVA</h2>
+            <form action="#" id="form-reserva" method="post" enctype="text/plain">
+                <div class="d-flex">
+                    <div class="form-control d-flex-column">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="input-search" id="nombre" name="nombre" placeholder="Ingrese su nombre...">
                     </div>
-                    <div class="fecha_salida">
-                        <label class="fecha_salida" for="fecha_salida">Fecha de salida:</label>
-                        <input type="date" id="fecha_salida" name="fecha_salida" >
+                    <div class="form-control d-flex-column">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" class="input-search" id="apellido" name="apellido" placeholder="Ingrese su apellido...">
                     </div>
-                    
-                <div class="form-habitacion">
-                    <!-- radiobutton de habitaciones -->
-                    <label>Habitacion:</label>
-                    <div class="habitaciones">
-                        <input type="radio" id="single-doble" name="habitaciones" value="single-doble" >
-                        <label for="single-doble">Single|doble</label>
-                        <input type="radio" id="doble-twin" name="habitaciones" value="doble-twin">
-                        <label for="doble-twin">Doble twin</label>
-                        <input type="radio" id="triple" name="habitaciones" value="triple">
-                        <label for="triple">Triple</label>
+                    <div class="form-control d-flex-column">
+                        <label for="mail">Mail:</label>
+                        <input type="email" class="input-search" id="mail" name="mail" placeholder="Ingrese su mail...">
                     </div>
-                </div>
+                    <div class="form-control d-flex-column">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" class="input-search" id="telefono" name="telefono" placeholder="Ingrese su teléfono...">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="adultos">Adultos:</label>
+                        <input type="number" class="input-search" id="adultos" name="adultos" placeholder="Cantidad de adultos..." min="1">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="menores">Menores:</label>
+                        <input type="number" class="input-search" id="menores" name="menores" placeholder="Cantidad de menores..." min="0">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="fecha_llegada">Fecha de llegada:</label>
+                        <input type="date" id="fecha_llegada" name="fecha_llegada">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="fecha_salida">Fecha de salida:</label>
+                        <input type="date" id="fecha_salida" name="fecha_salida">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label>Habitación:</label>
+                        <div class="d-flex">
+                            <input type="radio" id="single-doble" name="habitaciones" value="single-doble">
+                            <label for="single-doble">Single|Doble</label>
+                            <input type="radio" id="doble-twin" name="habitaciones" value="doble-twin">
+                            <label for="doble-twin">Doble Twin</label>
+                            <input type="radio" id="triple" name="habitaciones" value="triple">
+                            <label for="triple">Triple</label>
+                        </div>
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="aclaracion">Aclaración:</label>
+                        <textarea class="input-search aclaracion" id="aclaracion" name="aclaracion" placeholder="Deje sus comentarios o indicaciones para el hotel."></textarea>
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <input type="checkbox" id="terminos_condiciones" name="terminos_condiciones">
+                        <label for="terminos_condiciones">Acepto los términos y condiciones</label>
+                    </div>
 
-                <div class="aclaracion">
-                    <label>Aclaracion:</label>
-                    <input class="aclaracion" type="text" placeholder=" Deje sus comentarios o indicaciones para el hotel.">
-                </div>
-
-                <div class="tyc">
-                    <!-- checkbox de terminos y condiciones -->
-                    <input type="checkbox" id="terminos_condiciones" name="terminos_condiciones" >
-                    <label for="terminos_condiciones">Acepto los términos y condiciones</label>
-                </div>
-
-                
-                <div>
-                    <!-- Botones de enviar y borrar -->
-                    <input class="enviar" type="submit" value="Enviar">
-                    <input class="borrar" type="reset" value="Borrar">
+                    <input type="hidden" name="id" id="id-reserva">
+                    <button class="btn-cac" type="button" id="btn-save-reserva">Agregar Reserva</button>
+                    <button class="btn-cac" type="reset">Borrar</button>
                 </div>
             </form>
+        </section>
 
-        </div>
-
+        <section id="list" class="container">
+            <h3 class="subtitle">Listado de Reservas</h3>
+            <table id="list-table-reservas" class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Mail</th>
+                        <th>Telefono</th>
+                        <th>Adultos</th>
+                        <th>Menores</th>
+                        <th>Fecha de llegada</th>
+                        <th>Fecha de salida</th>
+                        <th>Habitacion</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-table-reservas">
+                    <!-- Aquí se llenarán dinámicamente las filas de reservas -->
+                </tbody>
+            </table>
+        </section>  
     </main>
 
     <footer>
@@ -112,12 +130,12 @@
             <div class="footer-content">
                 <h3>EasySleep</h3>
                 <ul class="list">
-                        <li><a href="/index.html">INICIO</a></li>
-                        <li><a href="/templates/html/register.html">REGISTRO CLIENTE</a></li>
-						<li><a href="/templates/html/reserva.html">RESERVA</a></li>
-                        <li><a href="/templates/html/rooms.html">HABITACIONES</a></li>
-						<li><a href="/templates/html/events.html">EVENTOS</a></li>
-                        <li><a href="/templates/html/contact.html">CONTACTO</a></li>
+                    <li><a href="/index.html">INICIO</a></li>
+                    <li><a href="/templates/html/register.html">REGISTRO CLIENTE</a></li>
+                    <li><a href="/templates/html/reserva.html">RESERVA</a></li>
+                    <li><a href="/templates/html/rooms.html">HABITACIONES</a></li>
+                    <li><a href="/templates/html/events.html">EVENTOS</a></li>
+                    <li><a href="/templates/html/contact.html">CONTACTO</a></li>
                 </ul>
             </div>
             <div class="footer-content">
@@ -134,6 +152,6 @@
         </div>
     </footer>
     <!-- conectamos el html con el script de js-->
-    <script src="/templates/javaScript/reservation.js"></script>
+    <script src="/templates/javaScript/reservations.js"></script>
 </body>
 </html>

@@ -68,158 +68,164 @@ body{
 
 /* ----- css del body ----- */
 
-body{
+body {
     margin: 0;
     padding: 0;
-    background: url(/static/img/reserva.jpg);
+    background: url(/Static/img/reserva.jpg);
     backdrop-filter: blur(3px);
-    background-repeat: no-repeat; /* Evitar que la imagen se repita */
-    background-size: cover; /* Escalar la imagen para cubrir toda la pantalla */
-    background-position: center; /* Centrar la imagen en la pantalla */
-    background-attachment: fixed; /* Fijar la imagen de fondo */
-    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
 }
 
-.formulario-reserva{
-    width: 500px; /* ancho de 400px */
-    padding: 30px; /* para separar la box del contenido */
-    background: rgba(255, 255, 255, 0.433); /* Gradiente lineal con opacidad */
-    border: 2px solid black; /* Borde negro de 4 píxeles */
-    border-radius: 6px;
-    font-size: 25px; /* tamaño de la fuente del texto del form */
-    font-family: sans-serif; /* Fuente elegante */
-    color: black; /* Color de texto */
-    margin: auto; /* para que este siempre centrado */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 1.1em;
+    color: #333;
     margin-top: 100px;
 }
 
-.formulario-reserva h2{
-    /* para personalizar el texto h2 de "formulario de registro" */
-    justify-content: center;
-    font-size: 31px; /* tamaño del texto*/
-    margin-bottom: 50px; /* el espacio que deja desde abajo */
-}
-
-.controls{
-    /* para personalizar los cuadros de texto de "ingrese su..." */
-    width: 100%; /* ancho de las barras */
-    padding: 5px;
-    border: 2px solid black;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    font-size: 15px;
-}
-
-.fecha_llegada{
-    margin-right: 30px;
-
-
-}
-
-#fecha_llegada{
-    margin-left: -5px;
-    padding: 2px;
-    border: 2px solid black;
-    border-radius: 2px;
-    text-align: center;
-}
-
-.fecha_salida{
-    margin: 20px 40px 0px 0px;
-}
-
-#fecha_salida{
-    padding: 2px;
-    border: 2px solid black;
-    border-radius: 2px;
-    text-align: center;
-}
-
-.form-habitacion{
-    margin-top: 20px;
-}
-
-.habitaciones label {
-    margin-right: 30px;  /* separacion entre cada opcion de habitacion*/
-}
-
-input[type="radio"] {
-    transform: scale(1.2); /* tamaño de los circulos de habitaciones*/
-}
-
-label[for="single-doble"],
-label[for="doble-twin"],
-label[for="triple"] {
-    /* Estilos para los labels de habitaciones */
-    font-size: 15px;
-    margin: 10px;
-    margin-bottom: 20px;
-    padding: 10px;
-    
-}
-
-.aclaracion label{
-    margin-top: 20px;   /* separar de arriba*/
-    display: flex;
-}
-
-.aclaracion{
-    /* cuadro de texto de aclaracion */
+.search-title {
+    font-size: 2em;
     margin-bottom: 50px;
-    width: 400px;
-    height: 100px;
+    text-align: center;
+    color: #333;
 }
 
-.aclaracion::placeholder {
-    /* Estilos para el texto del placeholder */
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-top: 2px;
-    font-size: 14px; /* Tamaño de fuente del placeholder */
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.tyc{
-    padding: 10px;
-    margin: 10px 0px 30px -10px;
-    font-size: 15px;
+.d-flex-column {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
 }
 
-#terminos_condiciones{
+.form-control {
+    margin-bottom: 30px;
+}
+
+.input-search {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.input-search:focus {
+    border-color: #4CAF50;
+}
+
+.d-flex .form-control {
+    flex: 1 1 48%;
+}
+
+.d-flex .form-control label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.d-flex .form-control input[type="radio"] {
     margin-right: 10px;
-
+    transform: scale(1.2);
 }
 
-/* Estilos para el botón "Enviar" */
-.enviar {
-    background-color: #4CAF50; /* Color de fondo verde */
-    color: white; /* Color del texto blanco */
-    padding: 10px 20px; /* Padding interno del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor al pasar el ratón */
-    transition: background-color 0.3s; /* Transición suave del color de fondo */
-    font-size: 16px; /* Tamaño de la fuente */
+.form-control:last-of-type {
+    margin-bottom: 50px;
 }
 
-.enviar:hover {
-    background-color: #45a049; /* Cambia de color al pasar el ratón */
+.form-control.d-flex-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
-/* Estilos para el botón "Borrar" */
-.borrar {
-    background-color: #f44336; /* Color de fondo rojo */
-    color: white; /* Color del texto blanco */
-    padding: 10px 20px; /* Padding interno del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor al pasar el ratón */
-    transition: background-color 0.3s; /* Transición suave del color de fondo */
-    font-size: 16px; /* Tamaño de la fuente */
+#terminos_condiciones {
+    margin: 0;
+    height: 20px;
 }
 
-.borrar:hover {
-    background-color: #9f1d1d; /* Cambia de color al pasar el ratón */
+input::placeholder {
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.btn-cac {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-right: 10px;
+}
+
+.btn-cac:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.btn-cac[type="reset"] {
+    background-color: #f44336;
+}
+
+.btn-cac[type="reset"]:hover {
+    background-color: #9f1d1d;
+}
+
+/* ------ css de la parte de la base de datos ------ */
+#list {
+    margin-top: 50px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.75em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
 }
 
 /* ----- css del footer ----- */
